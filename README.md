@@ -1,2 +1,9 @@
-# VetClinic
-a sample templateof vet clinic with modification into sending appointment on whatsapp based on html and js static website
+
+## 🔗 Live Demo
+[Visit Website](http://zulqarna1n.github.io/Vetclinic/)
+
+## 🛠️ Built With
+- HTML5
+- js
+- GitHub Pages
+

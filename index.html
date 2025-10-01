@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWag Hub | Veterinary Clinic</title>
+
+    <!-- MINIFIED CSS -->
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!-- BOXICONS CDN -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./assets/logo.png" alt="TailWag Hub logo"></a>
+        </div>
+        <ul id="nav__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#specialists">Specialists</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#appointment" class="btn">Make Appointment</a></li>
+        </ul>
+
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+      <div class="container">
+        <div class="header__image">
+          <img src="./assets/header.png" alt="Veterinarian caring for a pet" />
+        </div>
+        <div class="header__content">
+          <h1>
+            Complete Health Care Solutions for your <br />
+            <span id="petfriends">Pet Friends </span>🐈
+          </h1>
+          <p>
+            TailWag Hub provides compassionate care and cutting-edge solutions for your furry companions. Schedule an appointment today!
+          </p>
+          <a href="#appointment" class="btn">🐾 Make Appointment</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>TailWag Hub offers a range of services to ensure the well-being of your pets.</p>
+
+      <div class="container">
+        <article><i class="bx bx-donate-heart"></i><div><h4>Caring and Qualified Veterinarians</h4><small>Our compassionate vets provide top care for your pets.</small></div></article>
+        <article><i class="bx bx-support"></i><div><h4>Online Support</h4><small>Reach us anytime, anywhere for pet-related guidance.</small></div></article>
+        <article><i class="bx bx-calendar-heart"></i><div><h4>Online Booking</h4><small>Easily schedule appointments online.</small></div></article>
+        <article><i class="bx bx-infinite"></i><div><h4>24/7 Service</h4><small>We’re available round the clock for emergencies.</small></div></article>
+        <article><i class="bx bx-first-aid"></i><div><h4>Emergency Veterinary Care</h4><small>Immediate and effective emergency care anytime.</small></div></article>
+        <article><i class="bx bx-home-heart"></i><div><h4>Pet Boarding & Daycare</h4><small>Comfortable and secure boarding for your pets.</small></div></article>
+      </div>
+    </section>
+
+    <!-- ========== SPECIALISTS ========== -->
+    <section id="specialists">
+      <h2>Our Caring and Qualified Specialists</h2>
+      <p>Our specialists are experts in their fields, committed to your pets’ health and happiness.</p>
+
+      <div class="container">
+        <!-- Specialist cards here (your existing ones are fine, just replace numbers later) -->
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials" class="swiper mySwiper">
+      <h2>Pawsome Reviews from Pet Owners</h2>
+      <p>Discover what pet owners are saying about their experience with TailWag Hub:</p>
+
+      <div class="swiper-wrapper">
+        <!-- Testimonials (your existing ones are fine) -->
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- ========== APPOINTMENT FORM ========== -->
+    <section id="appointment">
+      <div class="container">
+        <div class="info">
+          <h2>Get an Appointment</h2>
+          <p>Book an appointment with TailWag Hub to ensure the best care for your pets.</p>
+          <!-- Info articles kept as is -->
+        </div>
+
+        <form id="appointmentForm">
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" required>
+          </div>
+          <div class="form__group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" pattern="[0-9]+" required>
+          </div>
+          <div class="form__group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form__group">
+            <label for="doctor">Department & Preferred Specialist</label>
+            <select id="doctor" name="doctor" required>
+              <option value="">-- Please select a doctor --</option>
+              <option value="Dr. Felix Flexipaws">Dr. Felix Flexipaws - Rehabilitation</option>
+              <option value="Dr. Nutra Whiskertail">Dr. Nutra Whiskertail - Nutrition</option>
+              <option value="Dr. Sterling Lifesaver">Dr. Sterling Lifesaver - Emergency Care</option>
+              <option value="Dr. Felix FractureFix">Dr. Felix FractureFix - Orthopedic</option>
+              <option value="Dr. Ivory Smilesworth">Dr. Ivory Smilesworth - Dental Care</option>
+              <option value="Dr. Luna Catologist">Dr. Luna Catologist - Behavior</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Additional Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+          <button type="submit">Send via WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="logo"><img src="./assets/logo-short.png" alt="TailWag Hub logo"></a>
+          <p>Compassionate care for your pets. Dedicated team, exceptional services.</p>
+          <div><i class="bx bx-phone"></i><small>+923001234567</small></div>
+          <div><i class="bx bx-mail-send"></i><small>info@tailwaghub.com</small></div>
+        </article>
+
+        <article>
+          <h3>Support</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Purchasing Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Career</a>
+        </article>
+
+        <article>
+          <h3>Permalinks</h3>
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#specialists">Specialists</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#appointment" class="btn">Get Appointment</a>
+        </article>
+
+        <article>
+          <h3>Contact Us</h3>
+          <p>Press</p>
+          <p>FAQs</p>
+          <div class="footer__socials">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="copyright">
+        <small> &copy; Designed and developed by <a href="https://oguzhanozenc.me">Oğuzhan Özenç</a></small>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js" async></script>
+  </body>
+</html>
